@@ -1,0 +1,55 @@
+---
+title: "TÜRKİYE’DE E-TİCARET VE ÇEVRİMİÇİ ALIŞVERİŞ YÖNELİMLERİ"
+author: 
+  - Selam Karakaş[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+[^1]: 17080217, [Github Repo](https://github.com/selamkarakas/arasinav)
+
+
+
+# Giriş
+E-ticaret günümüzde birçok alanda kullanılmaktadır. Gıda ve temel ihtiyaçlar evlere internet üzerinden sipariş verilmektedirler fakat ticaret örneği sadece bu olmamakla birlikte birçok alanda kullanılmaktadır. İnsanlar giyim ve teknoloji gibi gereksinimlerini internet aracılığı ile sipariş vermektedir. İnternette bulunan geniş ürün yelpazesi insanların işlerini birçok alanda hem zaman olarak hem de gereksinim ihtiyacı açısından oldukça kolaylaştırmıştır. E-ticaret alanında hizmet veren işletmelerin sayısı her geçen gün insanların interneti kullanma alışkanlığı ile de artmaktadır. Türkiye’de hizmet veren sektörlere ait, konaklama ve yiyecek, içecek sektörü, toptan ve perakende satış yapan sektörleri, @sakar2019real'ın çalışmasındaki 12330 gözlemlik verisetinin içinden eleme usulu ile sadeleştirme yaparak çevrimiçi alışveriş yapanların satın alma niyetinin gerçek zamanlı tahminini ve e-ticaret sisteminin ne kadar güvenli olduğunu ele alacağız.
+
+## Çalışmanın Amacı
+Bilgisayar kullanan ve e-ticaret aracılığıyla ürün-hizmet siparişi alan sektörler ve işletmelerin  ürün-hizmet satın alan sektörler ve müşteriler ile arasında ne gibi bir ilişki olduğunu, bu ilişki sürecinde aracı rolü üstlenen çevrimiçi sistemlerin güvenlik seviyelerini ve zaafiyetlerini, bu ilişkiyi belirli sistem altyapılarıyla kaydedip satın alma sürecinde satın alma amacı, zamanlaması, ödeme yöntemi, tercih sırası, satın alma zevkleri ve satın alma sıklığı gibi verilerle saptanması ve incelenmesini amaçladığımız bir istatistiksel analiz olacaktır.
+
+## Literatür 
+Tanımı gereği bakacak olursak; E-ticaret, klasik ticarete göre çeşitli avantajları barındırmaktadır. İnternet üzerinden gerçekleştiği için girişimcilerin riskleri standart bir girişimciye nazaran daha azdır. İş yeri kirası ve yanındaki emekçiye ödeyeceği maaş, sigorta gibi giderlerinden tasarruf etmektedir. İnternet kullanımı genç nüfusunda yetişmesinden dolayı artmakta ve e-ticaret firmaları kitlelere ulaşmasında da kolaylık sağlanmaktadır. Bu durum rekabetçi bir piyasa da oluşturmaktadır [@ozel2013ticaret]. E-ticaret sektöründe artan girişimciler sebebiyle oluşacak olan pazar ve ürün artışlarından dolayı girişimciler birbirleriyle yarışacaklardır. Bu süreçte piyasadaki ürünlerinin tutunabilmesi için kendilerini devamlı eğitimlerle yenilemeleri gerekecek ve kaliteli ürünleri piyasaya sunmak zorunda kalacaklardır. Kısacası iyi bir esnaf olma tutumunu bu ortama taşıyacaklardır. Müşterileri ile iletişimlerini arttırarak işlem maliyetlerini azaltabilirler. Nitekim elektronik girişimciliğin klasik ticarete göre; müşteri ürün tercihi, sadık müşteri tespiti, düşük stok maliyeti veya hiç stoksuz çalışma ve ödemenin peşin alınması gibi tartışılmaz üstünlükleri bulunmaktadır [@ozerouglu2018giricsimcilik]. Günümüzde internet ve bilgisayarların kullanımının artmasıyla gelişen e-ticaret sektöründe bazı sorunlar oluşabiliyor. Bilinçli bilinçsiz teknoloji kullanımı ile eriştiğimiz internet sitelerinden farkında olmadan güvenlik açığı veriyoruz. Oluşan haberlerle insanların bu dünyaya olan önyargıları da artabiliyor. İnternet ödemelerinde kredi kartlarının ele geçirilebileceğini düşüneceğimizden bu sektöre biraz geç başlamış olabiliriz. Bu yazıyla ilgili yayınlanan @wen2008research araştırmasından bir alıntı yapacak olursak; Çinli araştırmacı yazarlar bu konudaki düşüncelerini şöyle dile getirmişlerdir.”E-ticaret anlaşmasının ana sorunu güvenlik problemidir, çoğunlukla sistemin güvenliği ve bilgi güvenliği ile ilgili iki görüş vardır. Sistemdeki güvenlik problemlerinin olan sistem internet ortamında ele geçirilmesi, sistemin zarar görmesi, sistemin virüsler tarafından ele geçirilmesi sistemi kesmekte, servisi geciktirmekte ve sistemi etkili bir şekilde yıkmaktadır. Çoğu zaman bilgisayara gizlice giren kişilere engel olmak zordur; bilgi güvenliği problemleri, gizlice dinlenilme, dosyaların sıkıştırılması, bilgi kaybı, yanlış ve sahte bilgiler en yaygın bilgi hırsızlığıdır.” [@gulencc2008lojistik]. Çevrimiçi alışveriş siteleri müşterilerine en iyi hizmeti sunma sebebiyle sistemi fiili olarak bir satış danışmana çevirecek olan bilgileri müşterilerin telefon e-posta vb. bilgilerini alıp, müşteriler web sitesinde gezerken takibini sağlayarak hangi müşteriye ne içerik sunulacağını, kaçma ihtimali yüksek olan müşteriyi kaçırmama amaçlı teklif sunmayı, satın alma niyeti olan müşteri sayısını çevrimiçi sitede maksimum sayıda tutmayı ve satış için en iyi teklifleri müşteriye sunmayı amaçlayan altyapılar geliştirmişlerdir [@sakar2019real].
+
+
+
+
+
+\newpage
+# Kaynakça {#references}
+<div id="refs"></div>
+
